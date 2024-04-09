@@ -1,0 +1,133 @@
+.user-form-container {
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Added transition for background color and text color */
+}
+
+.light-mode .user-form-container {
+  background-color: #ffffff;
+  color: #333;
+}
+
+.dark-mode .user-form-container {
+  background-color: #333333; /* Darker background color for dark mode */
+  color: #fff; /* Text color for dark mode */
+}
+
+.user-form-container:hover {
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+}
+
+.user-form-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 24px;
+  transition: color 0.3s ease; /* Added transition for heading text color */
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.input-group input:focus {
+  border-color: #007bff;
+}
+
+.button-group {
+  text-align: center;
+}
+
+.button-group button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.light-mode .button-group button {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.dark-mode .button-group button {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+.popup {
+  background-color: rgba(0, 123, 255, 0.8);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dark-mode-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.dark-mode-toggle:hover {
+  background-color: #555;
+}
+
+body {
+  transition: background-color 0.3s ease; /* Added transition for body background color */
+}
+
+.light-mode body {
+  background-color: #ffffff;
+}
+
+.dark-mode body {
+  background-color: #1e1e1e;
+}
+
+.popup {
+  background-color: rgba(0, 123, 255, 0.8);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0; /* Initially hide the popup */
+  visibility: hidden; /* Initially hide the popup */
+  transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition */
+}
+
+.popup.show {
+  opacity: 1; /* Show the popup */
+  visibility: visible; /* Show the popup */
+}
